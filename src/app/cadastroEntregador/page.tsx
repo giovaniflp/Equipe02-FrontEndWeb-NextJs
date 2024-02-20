@@ -1,6 +1,7 @@
 import Link from "next/link";
 import FormInput from "../components/FormInput";
 import FormRadio from "../components/FormRadio";
+import FormSelect from "../components/FormSelect";
 
 export default function cadastroEntregador(){
     return(
@@ -22,7 +23,7 @@ export default function cadastroEntregador(){
             <FormInput type="text" title="Bairro"/>
             <FormInput type="text" title="Cidade"/>
             <FormInput type="number" title="CEP"/>
-            <FormInput type="text" title="UF"/>
+            <FormSelect></FormSelect>
             <FormInput type="text" title="Complemento"/>
             <FormRadio></FormRadio>
             <div className="flex justify-between">
