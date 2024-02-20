@@ -12,7 +12,7 @@ export default function cadastroProduto(){
             <FormInput type="number" title="Código do produto" placeholder="Informe o código do produto"/>
             <div className="flex flex-col ">
                 <label htmlFor="">Descrição</label>
-                <textarea className="border-2 border-gray-400 rounded-md" name="" id="" cols={30} rows={5} placeholder="Informe a descrição do produto"></textarea>
+                <textarea className="border-2 border-gray-400 rounded-md placeholder:text-gray-500" name="" id="" cols={30} rows={5} placeholder="Informe a descrição do produto"></textarea>
             </div>
             <FormInput type="number" title="Valor unitário"/>
             <FormInput type="number" title="Tempo de entrega mínimo em minutos" placeholder="30"/>
