@@ -8,6 +8,7 @@ import FormSelect from "../components/FormSelect";
 export default function cadastroEntregador(){
 
     function log(event: any){
+        // Impede de dar reload na página
         event.preventDefault();
         console.log(event.target.entregadorNome.value)
     }

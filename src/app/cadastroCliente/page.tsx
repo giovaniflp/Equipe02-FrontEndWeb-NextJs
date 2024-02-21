@@ -6,27 +6,9 @@ import FormInput from "../components/FormInput";
 export default function formPage(){
 
     function log(event: any){
-        event.preventDefault();
-
-        
-        // Usar o axios para mandar os values do input para o BackEnd Spring
-        // Alterar linha
-        const formData = new FormData(event.target);
-
-        // Obter valores dos campos
-        const clienteNome = formData.get("clienteNome");
-        const clienteCPF = formData.get("clienteCPF");
-        const clienteFoneCelular = formData.get("clienteFoneCelular");
-        const clienteFoneFixo = formData.get("clienteFoneFixo");
-        const clienteDtNascimento = formData.get("clienteDtNascimento");
-
-        // Fazer algo com os valores dos campos
-        console.log(event.target)
-        console.log(clienteNome);
-        console.log(clienteCPF);
-        console.log(clienteFoneCelular);
-        console.log(clienteFoneFixo);
-        console.log(clienteDtNascimento);
+        // Impede de dar reload na página
+        event.preventDefault(); 
+        console.log(event.target.clienteNome.value)
     }
 
     return(

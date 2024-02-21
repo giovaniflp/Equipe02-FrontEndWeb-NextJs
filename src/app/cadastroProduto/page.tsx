@@ -6,6 +6,7 @@ import FormInput from "../components/FormInput";
 export default function cadastroProduto(){
 
     function log (event: any){
+        // Impede de dar reload na página
         event.preventDefault();
         console.log(event)
         console.log(event.target.produtoTitulo.value)
