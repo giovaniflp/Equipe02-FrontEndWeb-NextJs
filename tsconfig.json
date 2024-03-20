@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/cadastroCliente/page.jsx", "src/app/cadastroEntregador/page.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/cadastroCliente/page.jsx", "src/app/cadastroEntregador/page.jsx", "src/app/cadastroProduto/page.jsx"],
   "exclude": ["node_modules"]
 }
