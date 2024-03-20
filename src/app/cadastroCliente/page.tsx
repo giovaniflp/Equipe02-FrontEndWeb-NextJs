@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import FormInput from "../components/FormInput";
+import NavigationHeader from "../components/NavigationHeader";
 
 export default function formPage(){
 
@@ -12,6 +13,8 @@ export default function formPage(){
     }
 
     return(
+        <div>
+        <NavigationHeader></NavigationHeader>
         <div className=" flex flex-col gap-4 h-screen bg-slate-300 p-4">
             <header>
                 <h1>Cliente - Cadastro</h1>
@@ -28,6 +31,7 @@ export default function formPage(){
                     <button className="border-blue-500 border-2 w-20 text-blue-500 text-cente rounded-xl" type="submit">Salvar</button>
                 </div>
             </form>
+        </div>
         </div>
     )
 }

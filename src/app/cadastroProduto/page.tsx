@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import FormInput from "../components/FormInput";
+import NavigationHeader from "../components/NavigationHeader";
 
 export default function cadastroProduto(){
 
@@ -13,6 +14,8 @@ export default function cadastroProduto(){
     }
 
     return(
+    <div>
+        <NavigationHeader></NavigationHeader>
         <div className="flex flex-col gap-4 h-screen bg-slate-300 p-4">
             <header>
                 <h1>Produto - Cadastro</h1>
@@ -34,5 +37,6 @@ export default function cadastroProduto(){
                 </div>
             </form>
         </div>
+    </div>
     )
 }
